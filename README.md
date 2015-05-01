@@ -1,25 +1,29 @@
-# Ember-cli-heroku
+# ember-cli-heroku
 
-This README outlines the details of collaborating on this Ember addon.
+This ember-cli-addon assists in deploying a ember-cli on heroku. This leverages [ember-cli-fastboot](https://github.com/tildeio/ember-cli-fastboot).
 
-## Installation
+## Setup
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```sh
+$ npm install hone/ember-cli-heroku --save-dev
+$ ember g ember-cli-heroku
+$ npm install
+$ bower install
+```
 
 ## Running
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```sh
+$ echo PORT=3000 > .env
+$ foreman run npm start
+```
 
-## Running Tests
+## Deploying
 
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+```sh
+$ git add package.json
+$ git commit -m "herokuify ember-cli"
+$ heroku create
+$ heroku config:add NPM_CONFIG_PRODUCTION=false
+$ git push heroku master
+```
