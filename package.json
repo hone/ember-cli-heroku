@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-heroku",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "ember cli addon for making it easier to deploy on heroku",
   "directories": {
     "doc": "doc",
     "test": "tests"
