@@ -6,7 +6,7 @@ This ember-cli-addon assists in deploying a ember-cli on heroku. This leverages 
 
 ```sh
 $ npm install hone/ember-cli-heroku --save-dev
-$ ember g ember-cli-heroku
+$ ember g heroku
 $ npm install
 $ bower install
 ```
