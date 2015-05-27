@@ -23,7 +23,7 @@ module.exports = {
       var contents = fs.readFileSync(packagepath, { encoding: 'utf8' });
       var pkg = JSON.parse(contents);
 
-      pkg.scripts.postinstall = 'bower install && ember build --output-path=public_html/ --environment=production';
+      pkg.scripts.postinstall = 'bower install && ember build --environment=production';
       pkg.cacheDirectories = ['node_modules', 'bower_components'];
 
       var newcontents = JSON.stringify(pkg, null, 2);
